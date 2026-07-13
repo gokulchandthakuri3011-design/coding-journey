@@ -105,8 +105,8 @@ Used to interact with the operating system.
 ```python
 import os
 
-print(os.getcwd())
-print(os.listdir())
+print(os.getcwd())  # Returns the current working directory path
+print(os.listdir())  # Returns a list of files/folders in the current directory
 ```
 
 ---
