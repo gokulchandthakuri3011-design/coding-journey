@@ -23,10 +23,8 @@ public class Smartphone {
     // Method: Charge Battery
     public void charge(int amount) {
         batteryLevel += amount;
-        if (batteryLevel > 100) {
-            batteryLevel = 100; // Cap at 100 as per instructions
-            System.out.println("Battery is full now, Takeout the charger in time!");
-        } else if (batteryLevel == 100) {
+        if (batteryLevel >= 100) {
+            batteryLevel = 100;
             System.out.println("Battery is full now.");
         } else {
             System.out.println("Charging... Current battery level is: " + batteryLevel + "%");

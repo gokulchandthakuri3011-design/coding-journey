@@ -163,24 +163,49 @@ try {
 
 **Why chain?** Your code gets a clean, meaningful error. The original technical error is still accessible via `getCause()` for debugging.
 
+**How it works:**
+1. `MalformedURLException` is caught in the catch block
+2. A new `ConnectionException` is created with TWO arguments:
+   - Your custom message: `"Failed to connect: " + url`
+   - The original exception `e` (passed to constructor)
+3. This creates a **chain**: `ConnectionException` → `MalformedURLException`
+
+**When to use:**
+- Database error → Catch `SQLException` → throw `DatabaseException("Cannot save data", e)`
+- Network error → Catch `IOException` → throw `NetworkException("Failed to load", e)`
+- File error → Catch `FileNotFoundException` → throw `FileException("Config missing", e)`
+
 ---
 
 ## 5. Try-with-Resources — "Auto-cleanup"
 
 Resources (files, DB connections, network sockets) **must be closed**. Old way was verbose and error-prone. New way is clean:
 
+**Key Classes Explained:**
+- **FileReader** — Opens a file and reads characters one by one (slow)
+- **BufferedReader** — Wraps FileReader to read in chunks for better performance
+- **IOException** — Thrown when something goes wrong with reading/writing (file not found, disk error, etc.)
+
 ```java
 // OLD WAY — messy, easy to forget close()
-BufferedReader reader = null;
+BufferedReader reader = null;        // Initialize as null (in case creation fails)
 try {
-    reader = new BufferedReader(new FileReader("data.txt"));
+    reader = new BufferedReader(new FileReader("data.txt"));  // Open file + add buffering
     // use reader
 } finally {
-    if (reader != null) {
-        try { reader.close(); } catch (IOException ignored) {}
+    if (reader != null) {            // Check if reader was created
+        try { reader.close(); } catch (IOException ignored) {}  // Close file (ignore errors)
     }
 }
+```
 
+**Why so complicated?**
+- `reader = null` — If file doesn't exist, reader stays null
+- `finally` — Always runs, whether exception or not
+- `if (reader != null)` — Can't close null
+- Nested `try-catch` — `close()` itself can throw IOException
+
+```java
 // NEW WAY — auto-closes, even if exception occurs
 try (BufferedReader reader = new BufferedReader(new FileReader("data.txt"))) {
     String line = reader.readLine();
@@ -188,6 +213,11 @@ try (BufferedReader reader = new BufferedReader(new FileReader("data.txt"))) {
 }
 // reader.close() called AUTOMATICALLY
 ```
+**How it works:**
+1. `FileReader` opens the file → throws `FileNotFoundException` if missing
+2. `BufferedReader` wraps it → adds efficient reading
+3. Both implement `AutoCloseable` → can use try-with-resources
+4. Any error during reading → throws `IOException
 
 **Multiple resources** close in **reverse** declaration order:
 ```java
@@ -197,6 +227,12 @@ try (FileWriter w = new FileWriter("out.txt");
 }
 // closes: out → w
 ```
+
+**Key Classes:**
+- **FileWriter** — Writes characters to a file (slow, no buffering)
+- **PrintWriter** — Wraps FileWriter, adds `println()` and `printf()` (fast, buffered)
+
+**Why reverse order?** PrintWriter depends on FileWriter. If you close FileWriter first, PrintWriter can't flush its buffer. So close PrintWriter first (reverse of opening order).`
 
 ---
 
