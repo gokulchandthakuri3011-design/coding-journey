@@ -18,159 +18,159 @@
 **Goal:** Understand syntax, basic operations, decisions, loops, data structures, functions, file handling, and basic error correction.
 
 ## Day 1: Getting Started
-- [ ] What is Python? History & use cases
-- [ ] Installing Python (latest version)
-- [ ] Setting up VS Code / PyCharm
-- [ ] Running your first script (`hello.py`)
-- [ ] Python REPL (interactive shell)
-- [ ] Comments (`#`, `"""docstrings"""`)
-- [ ] `print()` function
-- [ ] **Practice:** Run your first Hello World script and print custom greetings.
+- [x] What is Python? History & use cases
+- [x] Installing Python (latest version)
+- [x] Setting up VS Code / PyCharm
+- [x] Running your first script (`hello.py`)
+- [x] Python REPL (interactive shell)
+- [x] Comments (`#`, `"""docstrings"""`)
+- [x] `print()` function
+- [x] **Practice:** Run your first Hello World script and print custom greetings.
 
 ## Day 2: Variables & Data Types
-- [ ] Variables — naming rules & conventions
-- [ ] Data types: `int`, `float`, `str`, `bool`, `None`
-- [ ] `type()` and checking variables
-- [ ] Type casting: `int()`, `float()`, `str()`, `bool()`
-- [ ] Dynamic typing explained
-- [ ] Multiple assignment (`a, b, c = 1, 2, 3`)
-- [ ] Constants (naming convention `ALL_CAPS`)
-- [ ] **Practice:** Program that creates a user profile, type converter tool, coffee shop receipt.
+- [x] Variables — naming rules & conventions
+- [x] Data types: `int`, `float`, `str`, `bool`, `None`
+- [x] `type()` and checking variables
+- [x] Type casting: `int()`, `float()`, `str()`, `bool()`
+- [x] Dynamic typing explained
+- [x] Multiple assignment (`a, b, c = 1, 2, 3`)
+- [x] Constants (naming convention `ALL_CAPS`)
+- [x] **Practice:** Program that creates a user profile, type converter tool, coffee shop receipt.
 
 ## Day 3: Operators & Booleans
-- [ ] Arithmetic: `+`, `-`, `*`, `/`, `//`, `%`, `**`
-- [ ] Assignment: `=`, `+=`, `-=`, `*=`, `/=`, `%=`
-- [ ] Comparison/Relational: `==`, `!=`, `>`, `<`, `>=`, `<=`
-- [ ] Logical: `and`, `or`, `not`
-- [ ] Identity (`is`, `is not`) and Membership (`in`, `not in`)
-- [ ] Operator precedence
-- [ ] Boolean values and logic
-- [ ] **Practice:** Bill splitter calculator, rectangle area & perimeter, time converter, age checker, weather advisor.
+- [x] Arithmetic: `+`, `-`, `*`, `/`, `//`, `%`, `**`
+- [x] Assignment: `=`, `+=`, `-=`, `*=`, `/=`, `%=`
+- [x] Comparison/Relational: `==`, `!=`, `>`, `<`, `>=`, `<=`
+- [x] Logical: `and`, `or`, `not`
+- [x] Identity (`is`, `is not`) and Membership (`in`, `not in`)
+- [x] Operator precedence
+- [x] Boolean values and logic
+- [x] **Practice:** Bill splitter calculator, rectangle area & perimeter, time converter, age checker, weather advisor.
 
 ## Day 4: User Input & String Manipulation
-- [ ] Taking input using `input()` (always returns a string)
-- [ ] Converting input to numbers for math (type casting)
-- [ ] String concatenation (`+`) and repetition (`*`)
-- [ ] String indexing & slicing (`s[0]`, `s[1:5]`, `s[::-1]`)
-- [ ] String methods: `upper()`, `lower()`, `strip()`, `replace()`, `find()`, `split()`, `join()`
-- [ ] F-strings for formatting (`f"Hello {name}"`)
-- [ ] Escape characters (`\n`, `\t`, `\\`) and Raw strings (`r"..."`)
-- [ ] **Practice:** Favorite number calculator, grocery total calculator, password whitespace cleaner, ticket formatter, shouty greeter.
+- [x] Taking input using `input()` (always returns a string)
+- [x] Converting input to numbers for math (type casting)
+- [x] String concatenation (`+`) and repetition (`*`)
+- [x] String indexing & slicing (`s[0]`, `s[1:5]`, `s[::-1]`)
+- [x] String methods: `upper()`, `lower()`, `strip()`, `replace()`, `find()`, `split()`, `join()`
+- [x] F-strings for formatting (`f"Hello {name}"`)
+- [x] Escape characters (`\n`, `\t`, `\\`) and Raw strings (`r"..."`)
+- [x] **Practice:** Favorite number calculator, grocery total calculator, password whitespace cleaner, ticket formatter, shouty greeter.
 
 ## Day 5: Conditional Statements
-- [ ] `if`, `elif`, `else`
-- [ ] Nested `if` statements
-- [ ] Ternary operator (`x if condition else y`)
-- [ ] Truthy and Falsy values
-- [ ] `match`/`case` (Python 3.10+)
-- [ ] **Practice:** Even or odd checker, movie age restrictions, number positivity.
+- [x] `if`, `elif`, `else`
+- [x] Nested `if` statements
+- [x] Ternary operator (`x if condition else y`)
+- [x] Truthy and Falsy values
+- [x] `match`/`case` (Python 3.10+)
+- [x] **Practice:** Even or odd checker, movie age restrictions, number positivity.
 
 ## Day 6: Loops — `for` & `while`
-- [ ] `while` loops structure & avoiding infinite loops
-- [ ] `for` loops (iterating over sequences)
-- [ ] `range(start, stop, step)` function
-- [ ] Loop control: `break`, `continue`, `pass`
-- [ ] `else` clause on loops
-- [ ] Nested loops
-- [ ] `enumerate()` and `zip()`
-- [ ] **Practice:** Number collector, even number printer with range/continue, simple loop menu.
+- [x] `while` loops structure & avoiding infinite loops
+- [x] `for` loops (iterating over sequences)
+- [x] `range(start, stop, step)` function
+- [x] Loop control: `break`, `continue`, `pass`
+- [x] `else` clause on loops
+- [x] Nested loops
+- [x] `enumerate()` and `zip()`
+- [x] **Practice:** Number collector, even number printer with range/continue, simple loop menu.
 
 ## Day 7: Review & Practice (Fundamentals Part 1)
-- [ ] Week 1 Recap (Days 1–6)
-- [ ] Generating random numbers (`import random`, `random.randint()`)
-- [ ] **Practice:** Build a complete "Guess the Number" game.
-- [ ] **Practice:** The famous FizzBuzz challenge (numbers 1 to 50).
-- [ ] **Practice:** Interactive calculator (with division by zero protection).
-- [ ] **Practice:** Interactive password strength validator loop.
+- [x] Week 1 Recap (Days 1–6)
+- [x] Generating random numbers (`import random`, `random.randint()`)
+- [x] **Practice:** Build a complete "Guess the Number" game.
+- [x] **Practice:** The famous FizzBuzz challenge (numbers 1 to 50).
+- [x] **Practice:** Interactive calculator (with division by zero protection).
+- [x] **Practice:** Interactive password strength validator loop.
 
 ## Day 8: Lists (Part 1) — Introduction, Indexing, and Slicing
-- [ ] What is a List? Ordered, changeable collection of items
-- [ ] Lists can hold mixed data types
-- [ ] Accessing items: Positive and negative indexing (0-indexed)
-- [ ] Slicing subsets: `list_name[start:end]` (exclusive of end index)
-- [ ] **Practice:** Movie list basics, number slicing operations, mixed user profile formatter.
+- [x] What is a List? Ordered, changeable collection of items
+- [x] Lists can hold mixed data types
+- [x] Accessing items: Positive and negative indexing (0-indexed)
+- [x] Slicing subsets: `list_name[start:end]` (exclusive of end index)
+- [x] **Practice:** Movie list basics, number slicing operations, mixed user profile formatter.
 
 ## Day 9: Lists (Part 2) — List Operations & Methods
-- [ ] List methods: `append()`, `insert()`, `extend()`, `remove()`, `pop()`, `clear()`
-- [ ] Finding items: `index()`, `count()`, `in` operator
-- [ ] Sorting lists: `sort()` vs `sorted()`, `reverse()`
-- [ ] List copying: shallow vs deep copy
-- [ ] List comprehensions (`[x**2 for x in range(10)]`)
-- [ ] **Practice:** Dynamically updating task lists, sorted grade organizer, basic matrix operations.
+- [x] List methods: `append()`, `insert()`, `extend()`, `remove()`, `pop()`, `clear()`
+- [x] Finding items: `index()`, `count()`, `in` operator
+- [x] Sorting lists: `sort()` vs `sorted()`, `reverse()`
+- [x] List copying: shallow vs deep copy
+- [x] List comprehensions (`[x**2 for x in range(10)]`)
+- [x] **Practice:** Dynamically updating task lists, sorted grade organizer, basic matrix operations.
 
 ## Day 10: Tuples
-- [ ] Tuples creation, immutability (read-only collections)
-- [ ] Tuple unpacking (`a, b = b, a`)
-- [ ] Tuple methods: `count()`, `index()`
-- [ ] Named tuples (`collections.namedtuple`)
-- [ ] When to use tuples vs lists
-- [ ] **Practice:** GPS coordinate tracker, returning multiple values from a function.
+- [x] Tuples creation, immutability (read-only collections)
+- [x] Tuple unpacking (`a, b = b, a`)
+- [x] Tuple methods: `count()`, `index()`
+- [x] Named tuples (`collections.namedtuple`)
+- [x] When to use tuples vs lists
+- [x] **Practice:** GPS coordinate tracker, returning multiple values from a function.
 
 ## Day 11: Dictionaries (Part 1) — Key-Value Pairs
-- [ ] What is a Dictionary? Unordered key-value storage
-- [ ] Accessing values: `dict[key]` vs `dict.get(key, default)`
-- [ ] Modifying and adding key-value pairs
-- [ ] Dictionary methods: `keys()`, `values()`, `items()`
-- [ ] **Practice:** Phone book database, inventory management tracker.
+- [x] What is a Dictionary? Unordered key-value storage
+- [x] Accessing values: `dict[key]` vs `dict.get(key, default)`
+- [x] Modifying and adding key-value pairs
+- [x] Dictionary methods: `keys()`, `values()`, `items()`
+- [x] **Practice:** Phone book database, inventory management tracker.
 
 ## Day 12: Dictionaries (Part 2) & Sets
-- [ ] Iterating through dictionaries
-- [ ] Dictionary comprehensions
-- [ ] Collections: `defaultdict`, `Counter`
-- [ ] What is a Set? Unordered collection of unique items
-- [ ] Set operations: `union()`, `intersection()`, `difference()`, `symmetric_difference()`
-- [ ] **Practice:** Word frequency counter, common elements finder, list duplicate remover.
+- [x] Iterating through dictionaries
+- [x] Dictionary comprehensions
+- [x] Collections: `defaultdict`, `Counter`
+- [x] What is a Set? Unordered collection of unique items
+- [x] Set operations: `union()`, `intersection()`, `difference()`, `symmetric_difference()`
+- [x] **Practice:** Word frequency counter, common elements finder, list duplicate remover.
 
 ## Day 13: Mini-Project (Data Structures)
-- [ ] Synthesizing lists, tuples, dictionaries, and sets
-- [ ] Structured CLI program design
-- [ ] **Project:** Build a robust console-based **To-Do List Manager** or **Contact Book** with search, delete, and list updates.
+- [x] Synthesizing lists, tuples, dictionaries, and sets
+- [x] Structured CLI program design
+- [x] **Project:** Build a robust console-based **To-Do List Manager** or **Contact Book** with search, delete, and list updates.
 
 ## Day 14: Review & Practice (Data Structures)
-- [ ] Recap of Week 2 data structures
-- [ ] Nested data structures (lists of dicts, dicts of lists)
-- [ ] Complexity/Performance considerations (lists vs sets/dicts)
-- [ ] **Practice:** Student database manager with grades average calculation.
+- [x] Recap of Week 2 data structures
+- [x] Nested data structures (lists of dicts, dicts of lists)
+- [x] Complexity/Performance considerations (lists vs sets/dicts)
+- [x] **Practice:** Student database manager with grades average calculation.
 
 ## Day 15: Introduction to Functions
-- [ ] Defining functions using `def`
-- [ ] Calling functions
-- [ ] Pure functions vs Side effects
-- [ ] First-class functions (assigning functions to variables)
-- [ ] **Practice:** Code modularization, re-writing simple operations as functions.
+- [x] Defining functions using `def`
+- [x] Calling functions
+- [x] Pure functions vs Side effects
+- [x] First-class functions (assigning functions to variables)
+- [x] **Practice:** Code modularization, re-writing simple operations as functions.
 
 ## Day 16: Parameters and Arguments
-- [ ] Positional vs Keyword arguments
-- [ ] Default parameters
-- [ ] Arbitrary arguments (`*args` and `**kwargs`)
-- [ ] Positional-only and keyword-only parameters
-- [ ] Type hints in function definitions
-- [ ] **Practice:** Robust math helper, greeting generator with flexible arguments.
+- [x] Positional vs Keyword arguments
+- [x] Default parameters
+- [x] Arbitrary arguments (`*args` and `**kwargs`)
+- [x] Positional-only and keyword-only parameters
+- [x] Type hints in function definitions
+- [x] **Practice:** Robust math helper, greeting generator with flexible arguments.
 
 ## Day 17: Return Values
-- [ ] Using the `return` statement
-- [ ] Returning multiple values using tuples
-- [ ] Function docstrings (PEP 257)
-- [ ] **Practice:** Temperature converter suite, statistical analyzer function.
+- [x] Using the `return` statement
+- [x] Returning multiple values using tuples
+- [x] Function docstrings (PEP 257)
+- [x] **Practice:** Temperature converter suite, statistical analyzer function.
 
 ## Day 18: Variable Scope
-- [ ] Local vs Global variables
-- [ ] The `global` keyword (and why to avoid it)
-- [ ] The `nonlocal` keyword for nested functions
-- [ ] Closures in Python
-- [ ] **Practice:** Counter closure, scope collision investigation.
+- [x] Local vs Global variables
+- [x] The `global` keyword (and why to avoid it)
+- [x] The `nonlocal` keyword for nested functions
+- [x] Closures in Python
+- [x] **Practice:** Counter closure, scope collision investigation.
 
 ## Day 19: Advanced Functions
-- [ ] Higher-order functions
-- [ ] Lambda functions (anonymous functions)
-- [ ] Built-in higher-order functions: `map()`, `filter()`, `reduce()`
-- [ ] Introduction to Recursion (base case vs recursive case)
-- [ ] **Practice:** Sorting lists with custom lambda keys, recursive factorial and Fibonacci.
+- [x] Higher-order functions
+- [x] Lambda functions (anonymous functions)
+- [x] Built-in higher-order functions: `map()`, `filter()`, `reduce()`
+- [x] Introduction to Recursion (base case vs recursive case)
+- [x] **Practice:** Sorting lists with custom lambda keys, recursive factorial and Fibonacci.
 
 ## Day 20: Built-in Functions & Standard Library
-- [ ] Exploring essential built-in functions (`len()`, `sum()`, `max()`, `min()`, `any()`, `all()`, `zip()`, `enumerate()`)
-- [ ] Importing standard modules (`math`, `random`, `datetime`, `sys`, `os`)
-- [ ] **Practice:** Custom statistical tool using only built-in functions.
+- [x] Exploring essential built-in functions (`len()`, `sum()`, `max()`, `min()`, `any()`, `all()`, `zip()`, `enumerate()`)
+- [x] Importing standard modules (`math`, `random`, `datetime`, `sys`, `os`)
+- [x] **Practice:** Custom statistical tool using only built-in functions.
 
 ## Day 21: Mini-Project (Functions)
 - [ ] Refactoring code for reuse and modularity

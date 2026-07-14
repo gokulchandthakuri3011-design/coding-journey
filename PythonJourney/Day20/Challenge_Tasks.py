@@ -7,13 +7,13 @@
 
 # Listing all files and folders in the current directory
 import os
-path = os.getcwd() # Returns current directory path as string
-files = sorted(os.listdir(path)) # Sorts the files & folders in that directory in ascending order
+path = os.getcwd() # Returns cirrent directory path as string
+files = sorted(os.listdir()) #Sorts the files & folders in current directory in ascending order
 print(f"Current Directory: {path}\n")
-for i, file in enumerate(files):
+for i, file in enumerate(files, 1):
     print(f"{i}: {file}")
 
-# Using zip() to combile names and ages
+# Using zip() to combine names and ages
 names = ["Arun", "Gokul", "Lalita", "Hitesh", "Aastha"]
 ages = [22, 22, 21, 22, 21]
 for name, age in zip(names, ages):
@@ -21,9 +21,10 @@ for name, age in zip(names, ages):
 
 # Using built-in functions to analyze the list of scores
 scores = [87, 90, 67, 76, 98, 45, 50]
-average = sum(scores)/len(scores)
+average = round(sum(scores)/len(scores), 2) # round() prevents long float
 maximum_score = max(scores)
 minimum_score = min(scores) 
+print(f"Total scores: {len(scores)}")
 print(f"Average score is: {average}")
 print(f"The maximum score is: {maximum_score}")
 print(f"The minimum score is: {minimum_score}")
