@@ -173,7 +173,7 @@
 - [x] **Practice:** Custom statistical tool using only built-in functions.
 
 ## Day 21: Mini-Project (Functions)
-- [ ] Refactoring code for reuse and modularity
+- [x] Refactoring code for reuse and modularity
 - [ ] **Project:** Refactor all Week 1 games (e.g., "Guess the Number") and Week 2 projects (e.g., "Contact Book") to be fully driven by functions.
 
 ## Day 22: Review & Practice (Functions & Modularity)

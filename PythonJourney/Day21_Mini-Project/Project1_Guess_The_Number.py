@@ -9,14 +9,29 @@ Refactor the Guess the Number game so that:
 """
 import random
 
+def game_difficulty_menu():
+    """Prints the difficulty menu and returns user choice"""
+    print("\n   Game Difficulty Menu   ")
+    print("1. Easy (1-50)")
+    print("2. Medium (1-100)")
+    print("3. Hard (1-200)")
+
+    while True:
+        choice = input("Enter difficulty (1-Easy, 2-Medium, 3-Hard): ")
+        if choice in ("1", "2", "3"):
+            return choice
+        print("Invalid choice. Please enter 1, 2, or 3.")
+
 
 def secret_num_gen(choice):
+    """Returns a random number on the basis of user choice"""
     ranges = {"1": 50, "2": 100, "3": 200} # A dict mapping each choice to its max number
     high = ranges.get(choice, 100) # .get(choice, 100) returns 50 or 100 or 200 based on choice and incase of invalid choice returns default (100)
     return random.randint(1, high)
 
 
 def get_user_guess(choice):
+    """Asks user fo a number on the basis of choice and returns it"""
     prompts = {"1": "1-50", "2": "1-100", "3": "1-200"}
     prompt = prompts.get(choice, "1-100")
 
@@ -30,25 +45,13 @@ def get_user_guess(choice):
 
 
 def check_guess(secret_num, guess):
+    """Checks if the use guess and random are same or not"""
     if guess < secret_num:
         return "low"
     elif guess > secret_num:
         return "high"
     else:
         return "correct"
-
-
-def game_difficulty_menu():
-    print("\n   Game Difficulty Menu   ")
-    print("1. Easy (1-50)")
-    print("2. Medium (1-100)")
-    print("3. Hard (1-200)")
-
-    while True:
-        choice = input("Enter difficulty (1-Easy, 2-Medium, 3-Hard): ")
-        if choice in ("1", "2", "3"):
-            return choice
-        print("Invalid choice. Please enter 1, 2, or 3.")
 
 
 def play_game():
