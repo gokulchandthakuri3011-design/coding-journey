@@ -252,6 +252,31 @@ if __name__ == "__main__":
     main()
 ```
 
+### Purpose of Multi-File Structure with `if __name__ == "__main__"`
+The 3-file structure (`calculator.py`, `text_formatter.py`, `main.py`) exists for **modularity** — each file handles one responsibility:
+- `calculator.py` → math operations only
+- `text_formatter.py` → text operations only  
+- `main.py` → combines both and runs the full program
+
+The `if __name__ == "__main__"` block in `calculator.py` and `text_formatter.py` is **for testing during development only**. Here's how it works:
+
+**Scenario 1: Running `calculator.py` directly**
+```bash
+python calculator.py
+```
+Python executes `calculator.py` and sets `__name__` to `"__main__"`. So the condition `if __name__ == "__main__"` is `True`, and the test block runs.
+
+**Scenario 2: Importing `calculator` in `main.py`**
+```python
+import calculator  # Python runs calculator.py, but sets __name__ to "calculator"
+```
+When `main.py` imports `calculator`, Python still runs the code in `calculator.py`, but this time it sets `__name__` to `"calculator"` (the module name, which is the filename without `.py`). So the condition `if __name__ == "__main__"` becomes `"calculator" == "__main__"` → `False`, and the test block is skipped.
+
+This means:
+- You can run each module standalone to verify its functions work
+- When `main.py` imports them, only the clean function definitions load — no test output
+- You only need to run `python main.py` for the actual program
+
 ---
 
 ## 6. Multi-File Utility Package
