@@ -15,6 +15,10 @@ class InvalidAgeException extends Exception {
         this.age = age; // Store the invalid age
     }
 
+    public int getAge() {
+        return this.age;
+    }
+
     public static void validateAge(int age) throws InvalidAgeException {
         if (age < 18 || age > 120) {
             throw new InvalidAgeException(age); // Throws exception
