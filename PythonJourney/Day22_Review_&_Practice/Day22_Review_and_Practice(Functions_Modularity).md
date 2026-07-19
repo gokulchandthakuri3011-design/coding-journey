@@ -395,7 +395,7 @@ my_project/
 
 ### Easy
 1. Write a module `math_utils.py` with functions `is_even(n)`, `is_odd(n)`, and `square(n)`. Import and use them in a separate script.
-2. Create a function that accepts a list and returns a dictionary with each element as key and its index as value. Import and test it.
+2. Write a module `temp_converter.py` with functions `celsius_to_fahrenheit(c)`, `fahrenheit_to_celsius(f)`, and `celsius_to_kelvin(c)`. Test conversions in a separate script.
 3. Write a module `string_utils.py` with `reverse_string(s)`, `is_palindrome(s)`, and `count_vowels(s)`. Test each function using `if __name__ == "__main__"`.
 
 ### Medium

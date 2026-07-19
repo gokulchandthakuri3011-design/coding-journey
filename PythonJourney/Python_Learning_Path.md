@@ -177,9 +177,9 @@
 - [ ] **Project:** Refactor all Week 1 games (e.g., "Guess the Number") and Week 2 projects (e.g., "Contact Book") to be fully driven by functions.
 
 ## Day 22: Review & Practice (Functions & Modularity)
-- [ ] Review functions, scopes, and modular code design
-- [ ] Creating your own custom module files and importing them
-- [ ] The `__name__ == "__main__"` guard
+- [x] Review functions, scopes, and modular code design
+- [x] Creating your own custom module files and importing them
+- [x] The `__name__ == "__main__"` guard
 - [ ] **Practice:** Create a multi-file utility package (calculator + text formatter modules) and import it in a main runner script.
 
 ## Day 23: File Handling
