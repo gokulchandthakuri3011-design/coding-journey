@@ -107,7 +107,7 @@ if (x < y) {  // auto-unbox to compare
 }
 
 // Works with method calls
-ArrayList<Integer> list = new ArrayList<>();
+ArrayList<Integer> list = new ArrayList<>(); // <> is Diamond operator that tells java to figure out the type from lift side of '=' and i.e. here Integer(Obj) that only takes int
 list.add(42);    // autoboxing: int 42 → Integer(42)
 int val = list.get(0);  // unboxing: Integer(42) → int 42
 ```
@@ -154,8 +154,9 @@ String s3 = 42 + "";                   // "42" (concatenation trick)
 Integer num = 42;
 
 // Useful constants
-System.out.println(Integer.MAX_VALUE);    // 2147483647
+System.out.println(Integer.MAX_VALUE);    // 2147483647 
 System.out.println(Integer.MIN_VALUE);    // -2147483648
+// since int is 32-bit signed -> 32 bits = 2^32 total values and signed means half '-' ve & half '+' ve including 0 so range = -2^31 to 2^31 -1 ( 1 bit = sign , 31 bits = magnitude)
 
 // String conversion
 System.out.println(Integer.toHexString(255));  // "ff"
@@ -164,6 +165,7 @@ System.out.println(Integer.parseInt("123"));    // 123
 
 // Comparison
 int result = Integer.compare(10, 20);  // -1 (negative = first < second)
+// Integer.compare(a, b) returns a negative value when a < b, zero when a == b, or a positive value when a > b.
 
 // Bit operations
 System.out.println(Integer.bitCount(7));      // 3 (number of 1-bits)
@@ -177,8 +179,8 @@ Double d = 3.14;
 
 System.out.println(Double.MAX_VALUE);    // 1.7976931348623157E308
 System.out.println(Double.MIN_VALUE);    // 4.9E-324 (smallest positive)
-System.out.println(Double.isNaN(d / 0)); // false (Infinity, not NaN)
-System.out.println(Double.isInfinite(Double.POSITIVE_INFINITY)); // true
+System.out.println(Double.isNaN(d / 0)); // false (Infinity, not NaN) Nan -> undefined in Math(0/0)
+System.out.println(Double.isInfinite(Double.POSITIVE_INFINITY)); // true Here POSITIVE_INFINITY -> ∞
 
 double parsed = Double.parseDouble("3.14");
 ```
