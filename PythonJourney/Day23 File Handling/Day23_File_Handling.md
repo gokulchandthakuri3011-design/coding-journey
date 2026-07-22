@@ -319,9 +319,9 @@ CSV (Comma-Separated Values) is a common file format for storing tabular data. P
 
 ```
 Name,Age,City
-Gokul,25,Chennai
+Gokul,22,Dhangadhi
 Priya,22,Bangalore
-Arun,28,Mumbai
+Arun,22,Dhangadhi
 ```
 
 ### 7.1 Reading a CSV File
@@ -331,7 +331,7 @@ import csv
 
 # Reading with csv.reader
 with open("students.csv", "r") as file:
-    reader = csv.reader(file)
+    reader = csv.reader(file) # Creates a CSV reader obj, allowing to interate over rows and each row returned as a list of strings
     
     # Skip header row (optional)
     header = next(reader) # next() gets the first row from the reader and advances the iterator, so the for loop starts from the next row

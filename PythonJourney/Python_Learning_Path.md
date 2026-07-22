@@ -183,10 +183,10 @@
 - [ ] **Practice:** Create a multi-file utility package (calculator + text formatter modules) and import it in a main runner script.
 
 ## Day 23: File Handling
-- [ ] File access modes: `r`, `w`, `a`, `x`, `r+`, `b`
-- [ ] Opening, reading (`read()`, `readline()`, `readlines()`), and writing (`write()`, `writelines()`) files
-- [ ] The `with` statement (automatic resource closing)
-- [ ] Standard file formats: Reading/writing CSV and JSON files (`csv` and `json` modules)
+- [x] File access modes: `r`, `w`, `a`, `x`, `r+`, `b`
+- [x] Opening, reading (`read()`, `readline()`, `readlines()`), and writing (`write()`, `writelines()`) files
+- [x] The `with` statement (automatic resource closing)
+- [x] Standard file formats: Reading/writing CSV and JSON files (`csv` and `json` modules)
 - [ ] **Practice:** File log generator, CSV grade processor, JSON system configuration loader.
 
 ## Day 24: Error & Exception Handling
