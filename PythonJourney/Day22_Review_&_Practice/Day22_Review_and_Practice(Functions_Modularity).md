@@ -330,7 +330,7 @@ def char_count(text, char):
     return text.lower().count(char.lower())
 
 def repeat_text(text, times):
-    return text * times
+    return " ".join(text * times)
 
 if __name__ == "__main__":
     print("Running text_formatter module tests...")
