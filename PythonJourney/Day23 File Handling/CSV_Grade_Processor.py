@@ -60,7 +60,7 @@ def grade_calc():
             else:
                 grade = "F"
 
-            results.append([name, round(average, 2), grade])
+            results.append([name, round(average, 2), grade]) # Here 2 inside round() tells to round up to 2 decimal places
             print(f"{name}: {average:.2f} → {grade}")
 
     # Writing results to new file

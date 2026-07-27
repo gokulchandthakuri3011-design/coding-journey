@@ -331,7 +331,7 @@ import csv
 
 # Reading with csv.reader
 with open("students.csv", "r") as file:
-    reader = csv.reader(file) # Creates a CSV reader obj, allowing to interate over rows and each row returned as a list of strings
+    reader = csv.reader(file) # Creates a CSV reader obj, allowing to iterate over rows and each row returned as a list of strings
     
     # Skip header row (optional)
     header = next(reader) # next() gets the first row from the reader and advances the iterator, so the for loop starts from the next row
@@ -352,8 +352,8 @@ with open("students.csv", "r") as file:
     
     for row in reader:
         print(row["Name"], "is", row["Age"], "years old")
-        # Gokul is 25 years old
-        # Priya is 22 years old
+        # Gokul is 22 years old
+        # Priya is 25 years old
 ```
 
 ### 7.3 Writing a CSV File
