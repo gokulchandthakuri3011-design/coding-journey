@@ -526,20 +526,20 @@ For domain-specific errors, create your own exception classes. Always inherit fr
 ### Basic Custom Exception
 
 ```python
-class AppError(Exception):
+class AppError(Exception): # 'AppError is a kind of Exception' and inherits all the standard exception behavior
     """Base exception for our application."""
-    pass
+    pass # It means class has no extra code - it's just a named label.
 ```
 
 ### Custom Exceptions with Details
 
 ```python
 class InsufficientFundsError(Exception):
-    def __init__(self, balance, amount):
-        self.balance = balance
+    def __init__(self, balance, amount): # '__init__' is a constructor which runs, when you create the exception
+        self.balance = balance # 'self' creates the instance
         self.amount = amount
         self.deficit = amount - balance
-        super().__init__(
+        super().__init__( # Here parent class constructor is being called, which stores the message string
             f"Cannot withdraw {amount}: balance is {balance} "
             f"(short by {self.deficit})"
         )
@@ -652,138 +652,6 @@ Think about **what operation fails**:
 - File operations? → `FileNotFoundError`, `PermissionError`
 - Math operations? → `ZeroDivisionError`
 - Calling methods? → `AttributeError`, `TypeError`
-
----
-
-## 11. Practical Patterns
-
-### Pattern 1: Crash-Proof Input
-
-```python
-def get_int(prompt: str) -> int:
-    """Keep asking until user enters a valid integer."""
-    while True:
-        try:
-            return int(input(prompt))
-        except ValueError:
-            print("Please enter a valid integer. Try again.")
-
-def get_float(prompt: str) -> float:
-    """Keep asking until user enters a valid float."""
-    while True:
-        try:
-            return float(input(prompt))
-        except ValueError:
-            print("Please enter a valid number. Try again.")
-
-# Usage
-age = get_int("Enter your age: ")
-price = get_float("Enter price: $")
-```
-
-### Pattern 2: Robust File Reader
-
-```python
-import json
-
-def read_json_config(path: str) -> dict:
-    """Read a JSON config file with graceful error handling."""
-    try:
-        with open(path, "r") as f:
-            return json.load(f)
-    except FileNotFoundError:
-        print(f"Config file '{path}' not found. Using defaults.")
-        return {}
-    except json.JSONDecodeError as e:
-        raise ValueError(f"Invalid JSON in '{path}'") from e
-
-# Usage
-config = read_json_config("settings.json")
-```
-
-### Pattern 3: Retry with Backoff
-
-```python
-import time
-from functools import wraps
-
-def retry(max_attempts=3, delay=1, backoff=2):
-    """Retry a function on failure with exponential backoff."""
-    def decorator(func):
-        @wraps(func)
-        def wrapper(*args, **kwargs):
-            current_delay = delay
-            for attempt in range(1, max_attempts + 1):
-                try:
-                    return func(*args, **kwargs)
-                except Exception as e:
-                    if attempt == max_attempts:
-                        raise
-                    print(f"Attempt {attempt} failed: {e}. "
-                          f"Retrying in {current_delay}s...")
-                    time.sleep(current_delay)
-                    current_delay *= backoff
-        return wrapper
-    return decorator
-
-@retry(max_attempts=3, delay=1, backoff=2)
-def fetch_data(url):
-    import random
-    if random.random() < 0.7:
-        raise ConnectionError("Network timeout")
-    return {"status": "ok"}
-
-# Usage
-try:
-    data = fetch_data("https://api.example.com")
-except ConnectionError:
-    print("Failed after 3 attempts.")
-```
-
-### Pattern 4: Safe File Operations
-
-```python
-def safe_write(path: str, content: str) -> bool:
-    """Write to file safely, returning success/failure."""
-    try:
-        with open(path, "w") as f:
-            f.write(content)
-        return True
-    except PermissionError:
-        print(f"Permission denied: {path}")
-        return False
-    except OSError as e:
-        print(f"Write error: {e}")
-        return False
-
-# Usage
-if safe_write("output.txt", "Hello"):
-    print("File saved!")
-else:
-    print("Could not save file.")
-```
-
-### Pattern 5: Context Manager for Timing
-
-```python
-import time
-from contextlib import contextmanager
-
-@contextmanager
-def timer(label: str):
-    """Time a block of code."""
-    print(f"⏱ {label} started")
-    start = time.perf_counter()
-    try:
-        yield
-    finally:
-        elapsed = time.perf_counter() - start
-        print(f"⏱ {label} finished in {elapsed:.4f}s")
-
-# Usage
-with timer("Sort list"):
-    data = sorted(range(1000000, 0, -1))
-```
 
 ---
 
