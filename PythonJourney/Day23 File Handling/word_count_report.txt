@@ -1,0 +1,5 @@
+=== WORD COUNT REPORT ===
+Total Lines: 3
+Total Words: 50
+Total Characters: 293
+Most Common Word: "your" (appeared 3 times)

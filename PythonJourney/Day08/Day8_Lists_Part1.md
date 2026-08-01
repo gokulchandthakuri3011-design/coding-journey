@@ -101,7 +101,7 @@ Create a new Python file (e.g., `Day8_Task1.py`) and try out these exercises.
 ---
 
 ### 💡 Daily Routine Checklist (Day 8):
-- [ ] Read the notes on list creation, indexing, and slicing.
-- [ ] Complete Assignment 1.
-- [ ] Complete Assignment 2.
-- [ ] Complete Assignment 3.
+- [x] Read the notes on list creation, indexing, and slicing.
+- [x] Complete Assignment 1.
+- [x] Complete Assignment 2.
+- [x] Complete Assignment 3.
