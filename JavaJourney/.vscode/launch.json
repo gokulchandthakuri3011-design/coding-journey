@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Day3_Task4",
+            "request": "launch",
+            "mainClass": "Week1_Java_Basics.Day3_Operators_and_Input.Day3_Task4",
+            "projectName": "JavaJourney_59392af1"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}",
