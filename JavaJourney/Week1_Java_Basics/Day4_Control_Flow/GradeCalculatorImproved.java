@@ -33,26 +33,21 @@ public class GradeCalculatorImproved {
             }
         }
 
-        // Calling the method to calculate and print the grade
-        String grade = calculatedGrade(score);
-        System.out.println("Your grade is: " + grade);
+        // Determine the grade using control flow only
+        if (score >= 90) {
+            System.out.println("Your grade is: A");
+        } else if (score >= 80) {
+            System.out.println("Your grade is: B");
+        } else if (score >= 70) {
+            System.out.println("Your grade is: C");
+        } else if (score >= 60) {
+            System.out.println("Your grade is: D");
+        } else {
+            System.out.println("Your grade is: F");
+        }
 
         // Closing the scanner
         scanner.close();
     }
-
-    // Method to calculate the grade based on score
-    public static String calculatedGrade(int score) {
-        if (score >= 90) {
-            return "A";
-        } else if (score >= 80) {
-            return "B";
-        } else if (score >= 70) {
-            return "C";
-        } else if (score >= 60) {
-            return "D";
-        } else {
-            return "F";
-        }
-    }
 }
+

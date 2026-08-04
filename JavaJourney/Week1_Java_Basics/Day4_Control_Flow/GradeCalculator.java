@@ -25,32 +25,23 @@ public class GradeCalculator {
         System.out.print("Enter your score: ");
         int score = scanner.nextInt();
 
-        // Calling the method to calculate and print the grade
-        String grade = calculatedGrade(score);
-        System.out.println("Your grade is: " + grade);
+        // Determine the grade using control flow only
+        if (score < 0 || score > 100) {
+            System.out.println("Invalid score. Please enter a score between 0 and 100.");
+        } else if (score >= 90) {
+            System.out.println("Your grade is: A");
+        } else if (score >= 80) {
+            System.out.println("Your grade is: B");
+        } else if (score >= 70) {
+            System.out.println("Your grade is: C");
+        } else if (score >= 60) {
+            System.out.println("Your grade is: D");
+        } else {
+            System.out.println("Your grade is: F");
+        }
 
         // Closing the scanner
         scanner.close();
     }
-
-    // method to calculate the grade based on score
-    public static String calculatedGrade(int score) {
-
-        // Validating the score input
-        if (score < 0 || score > 100) {
-            return "Invalid score. Please enter a score between 0 and 100.";
-        } else if (score >= 90) {
-            return "Grade A";
-        } else if (score >= 80) {
-            return "Grade B";
-        } else if (score >= 70) {
-            return "Grade C";
-        } else if (score >= 60) {
-            return "Grade D";
-        } else {
-            return "Grade F";
-        }
-    }
-
-    
 }
+

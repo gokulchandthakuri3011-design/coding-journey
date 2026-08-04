@@ -34,7 +34,7 @@ public class AgeCategory {
                                 : "Senior";
 
                 // Grammatical check: "an Adult" vs "a Child/Teenager/Senior"
-                String article = ageGroup.equals("Adult") ? "an" : "a";
+                String article = ageGroup.equals("Adult") ? "an" : "a"; // Using ternary operator for grammatical correctness
                 System.out.println("The person is " + article + " " + ageGroup);
             }
         } else {

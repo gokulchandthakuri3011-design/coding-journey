@@ -30,7 +30,7 @@ print("coffee" in menu)
 
 # 6. Trying to change the second item to "french toast".
 try:    # This will raise a TypeError since tuples are immutable.
-    menu[1] = "french toast" 
+    menu[1] = "french toast"  
 except TypeError:    # Python jumps to this block when it encounters the error.
     # 7. Printing "Tuples are immutable!" in the except block.
     print("Tuples are immutable!")    # This message will be printed instead of crashing the program.
