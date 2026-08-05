@@ -6,7 +6,7 @@ Write a `for` loop that prints the numbers from 1 to 10,
 each on its own line. 
 */
 
-public class Day5 {
+public class Day5_Task1 {
     public static void main(String[] args) {
 
         // Loop from 1 to 10
