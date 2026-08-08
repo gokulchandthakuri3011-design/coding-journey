@@ -211,11 +211,11 @@
 **Goal:** Master object-oriented programming, Pythonic syntax (decorators, generators), concurrency, testing, and system utilities.
 
 ## Day 26: OOP — Classes & Objects
-- [ ] Principles of OOP (Object-Oriented Programming)
-- [ ] Creating a class and instantiating objects
-- [ ] The `__init__()` constructor method and `self`
-- [ ] Instance variables vs Class variables
-- [ ] Special methods: `__str__()` and `__repr__()`
+- [x] Principles of OOP (Object-Oriented Programming)
+- [x] Creating a class and instantiating objects
+- [x] The `__init__()` constructor method and `self`
+- [x] Instance variables vs Class variables
+- [x] Special methods: `__str__()` and `__repr__()`
 - [ ] **Practice:** Create a Student class and BankAccount class.
 
 ## Day 27: OOP — Inheritance & Polymorphism
