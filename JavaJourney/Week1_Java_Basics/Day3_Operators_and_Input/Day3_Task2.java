@@ -13,6 +13,7 @@ public class Day3_Task2 {
     public static void main(String[] args) {
 
         // The Even/Odd Checker
+        System.out.println("---- The Even/Odd Checker ----");
 
         // Declaring and initializing an int variable
         int myNumber = 15;

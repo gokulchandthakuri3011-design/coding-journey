@@ -38,19 +38,35 @@ char grade = 'A';
 String name = "Alice";
 ```
 
-### 4. Type Casting (Basic)
+### 4. Type Casting (Converting one data type to another)
 Type casting means changing one data type into another.
 
-- **Widening**: converting a smaller type into a bigger one, which Java usually does automatically.
-- **Narrowing**: converting a bigger type into a smaller one, which you must do manually.
-
+**Implicit Casting (Widening)** — automatic, safe, no data loss. Happens when converting a *smaller* type to a *larger* type:
 ```java
 int age = 25;
-double ageAsDouble = age;      // widening: automatic
-
-double price = 9.99;
-int roundedPrice = (int) price; // narrowing: manual
+double ageAsDouble = age;      // int → double, automatic
+long big = 1000;               // int literal fits into long
 ```
+Order: `byte → short → int → long → float → double`
+
+**Explicit Casting (Narrowing)** — manual, uses `(type)`, can lose data. Converting a *larger* type to a *smaller* one:
+```java
+double price = 9.99;
+int roundedPrice = (int) price;   // 9 (decimal part dropped, not rounded!)
+
+long huge = 4000000000L;
+int small = (int) huge;           // 1410065408 (overflow! wraps around)
+```
+
+**Important notes**
+- `(int)` **truncates**, it does NOT round — `(int) 3.99` is `3`, not `4`. For rounding use `Math.round(3.99)`.
+- `char` ↔ numbers: `char letter = 'A'; int code = (int) letter; // 65 (ASCII)`
+- `String` ↔ numbers (not a cast, done via methods):
+  ```java
+  int num = Integer.parseInt("123");
+  String text = String.valueOf(123);   // or 123 + ""
+  ```
+- `boolean` cannot be cast to/from any numeric type.
 
 > Narrowing can lose information, so `9.99` becomes `9` when cast to `int`.
 

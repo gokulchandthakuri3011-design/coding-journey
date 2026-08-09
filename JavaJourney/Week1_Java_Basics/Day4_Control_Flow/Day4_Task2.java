@@ -1,6 +1,5 @@
 package Week1_Java_Basics.Day4_Control_Flow;
 
-
 /*
 ### Task 2: Discount Calculator
 You are writing software for a store. Declare a `double` variable `purchaseAmount`.
@@ -14,6 +13,7 @@ public class Day4_Task2 {
     public static void main(String[] args) {
 
         // Discount Calculator
+        System.out.println("--- Discount Calculator ---");
 
         // Declare a double variable purchaseAmount
         double purchaseAmount = 120.0; // Example purchase amount

@@ -14,6 +14,7 @@ import java.util.Scanner;
 
 public class Day4_Task3 {
     public static void main(String[] args) {
+        System.out.println("---- Simple Calculator ----");
 
         // Creating a Scanner obj to take input from user
         Scanner scanner = new Scanner(System.in);
@@ -24,7 +25,9 @@ public class Day4_Task3 {
         double num2 = scanner.nextDouble();
 
         System.out.print("Enter an operator (+, -, *, /): ");
-        char operator = scanner.next().charAt(0);
+        char operator = scanner.next().charAt(0); /* scanner.next() — reads the next token (until whitespace) as a String. If the user types +, it returns "+".
+                                                            2. .charAt(0) — gets the character at index 0 (the first char) of that String. So "+" becomes '+'.
+                                                            3. char operator = ... — stores that single character in a char variable named operator. */
 
         double result;
 

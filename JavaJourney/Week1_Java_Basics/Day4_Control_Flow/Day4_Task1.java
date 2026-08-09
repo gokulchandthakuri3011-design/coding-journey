@@ -11,20 +11,20 @@ public class Day4_Task1 {
     public static void main(String[] args) {
 
         // Even or Odd Checker
+        System.out.println("---- Even/Odd Checker ----");
 
         // Declare an integer variable and assign it a value
         int number = 16; // You can change this value to test with different numbers
 
         // Using if-else statement to check if the number is even or odd
-       /*  if (number % 2 == 0) {
+        if (number % 2 == 0) {
             System.out.println("The number " + number + " is Even.");
         } else {
             System.out.println("The number " + number + " is Odd.");
-        } */
+        } 
 
         // using ternary operator to check if the number is even or odd
         String result = (number % 2 != 0) ? "Odd" : "Even";
-        System.out.println("The number " + number + " is " + result + ".");
-    }
-    
+        System.out.println("The number " + number + " is: " + result);
+    }     
 }

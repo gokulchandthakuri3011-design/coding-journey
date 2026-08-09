@@ -10,7 +10,9 @@ package Week1_Java_Basics.Day3_Operators_and_Input;
 */
 
 public class Day3_Task3 {
-        public static void main(String[] args) {
+    public static void main(String[] args) {
+
+        System.out.println("---- Grade Evaluator ----");
         int score = 78;
 
         // Checking the grade using boolean

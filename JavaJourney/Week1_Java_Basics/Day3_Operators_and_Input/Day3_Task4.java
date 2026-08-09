@@ -1,3 +1,5 @@
+package Week1_Java_Basics.Day3_Operators_and_Input;
+
 /*
 ### Task 4: Eligibility Check
 1. You are checking if someone is eligible for a special discount. 
@@ -5,10 +7,9 @@
 3. Write a logical expression using `||` to check eligibility and print the `boolean` result.
 */
 
-package Week1_Java_Basics.Day3_Operators_and_Input;
-
 public class Day3_Task4 {
     public static void main(String[] args) {
+        System.out.println("---- Eligibility Checker ----");
         boolean isStudent = true;
         int age = 68;
 

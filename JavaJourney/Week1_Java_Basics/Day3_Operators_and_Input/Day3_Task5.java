@@ -1,3 +1,5 @@
+package Week1_Java_Basics.Day3_Operators_and_Input;
+
 /*
 ### Task 5: User Input Practice
 1. Use `Scanner` to read a user's `name` and `favoriteNumber` from the console.
@@ -5,11 +7,11 @@
 3. Example output: `Hello Maya, your favorite number is 8.`
 */
 
-package Week1_Java_Basics.Day3_Operators_and_Input;
 import java.util.Scanner;
 
 public class Day3_Task5 {
     public static void main(String[] args) {
+        System.out.println("--- User Input Practice ---");
         Scanner scanner = new Scanner(System.in);
 
         // Prompting user for their name

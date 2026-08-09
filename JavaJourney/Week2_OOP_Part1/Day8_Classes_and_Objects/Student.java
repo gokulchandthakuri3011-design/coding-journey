@@ -24,8 +24,10 @@ public class Student {
         System.out.println("Roll Number: " + rollNumber);
         System.out.println("Marks: " + marks);
     }
+}
 
-    // Creating Main Method
+// Mian class
+class Main {
     public static void main(String[] args) {
         // Creating 1st Student Object
         Student s1 = new Student();
