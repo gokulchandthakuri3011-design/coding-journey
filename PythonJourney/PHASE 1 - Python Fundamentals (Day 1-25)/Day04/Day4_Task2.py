@@ -1,20 +1,18 @@
 """
-### Assignment 2: The Ticket Formatter
-1. Create variables: `movie_title` (string), `time` (string), and `ticket_price` (float).
-2. Use an **f-string** to create a well-formatted ticket and save it to a variable called `ticket`.
-3. Print the `ticket`. 
-   *Example Output: `Movie: The Matrix | Time: 8:00 PM | Price: $12.5`*
+### Assignment 2: Simple Grocery Total
+1. Ask the user for the price of one item using `input()`.
+2. Ask how many items they want to buy.
+3. Convert the price to `float` and the quantity to `int`.
+4. Calculate the total cost and print it.
 """
+print("\n--------------------------------")
+print("\n --- Simple Grocery Total --- \n")
 
-# The Ticket Formatter
-
-# Creating variables for movie tittle, time and ticket price
-movie_title = "Avengers: Endgame"
-time = "7:30 PM"
-ticket_price = 15.0 # In dollars
-
-# Using an f-string to create a well-formed ticket
-ticket = f"Movie: {movie_title} | Time: {time} | Price: ${ticket_price}"
-
-# Printing the ticket
-print(ticket)
+# Asking user for input
+price_per_item = float(input("Enter the price of item: "))
+num_items = int(input("Enter the number of items they want to buy: "))
+print(f"Price Per Item: ${price_per_item:.2f}")
+print(f"Numbers of items to buy: {num_items}")
+total_cost = price_per_item * num_items
+print(f"\nTotal Cost for every items: ${total_cost:.2f}\n")
+print("----------------------------------")

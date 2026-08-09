@@ -11,7 +11,7 @@
 total_minutes = 135
 
 # Calculating hours and remaining minutes
-hours = total_minutes // 60
+hours = total_minutes // 60 # Floor Division(//) divides and rounds down to nearest int
 remaining_minutes = total_minutes % 60
 
 # Printing the result
