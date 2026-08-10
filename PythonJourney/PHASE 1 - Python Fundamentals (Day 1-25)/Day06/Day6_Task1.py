@@ -12,14 +12,14 @@ count = 0
 
 # Loop to get user input
 while True:
-    user_input = input("Enter a number (or type 'done' to finish): ")
+    user_input = input("Enter a number (or type 'done' to finish): ").strip()
 
     # Check for 'done' to break the loop
     if user_input.lower() == 'done':
         break
 
     # Check for empty input
-    if user_input.strip() == '':
+    if user_input == '':
         print("Empty input, please enter a valid number.")
         continue
 

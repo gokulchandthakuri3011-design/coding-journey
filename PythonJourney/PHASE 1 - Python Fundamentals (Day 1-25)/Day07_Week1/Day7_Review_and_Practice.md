@@ -76,7 +76,7 @@ Create a simple program that validates a user's password based on specific crite
 ---
 
 ### 💡 Daily Routine Checklist (Day 7):
-- [ ] Read through the Week 1 recap.
-- [ ] Complete the "Guess the Number" game.
-- [ ] Attempt at least one of the additional practice assignments.
+- [x] Read through the Week 1 recap.
+- [x] Complete the "Guess the Number" game.
+- [x] Attempt at least one of the additional practice assignments.
 - [ ] Pat yourself on the back for completing Week 1! 🎉

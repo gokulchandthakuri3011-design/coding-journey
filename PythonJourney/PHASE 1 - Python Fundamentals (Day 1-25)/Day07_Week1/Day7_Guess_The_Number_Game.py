@@ -12,8 +12,9 @@ Your primary project for today is to build a classic "Guess the Number" game. Th
 6.  The game should continue looping until the user guesses the correct number.
 """
 import random
-secret_number = random.randint(1, 100)
+secret_number = random.randint(1, 100) # Includes Num 1-100 including both 1 & 100
 attempts = 0
+print("\n --- Guess The Number Game --- \n")
 
 # Start the game loop
 while True:
@@ -30,5 +31,5 @@ while True:
     else:
         print(f"Congratulations! You've guessed the number {secret_number} in {attempts} attempts!")
         break # Exit the loop when the guess is correct
-
+print("-------------------------------")
 

@@ -1,20 +1,11 @@
 """
-Write a program that uses a for loop and range().
-- Print numbers from 1 to 10.
-- Skip multiples of 3 using continue.
-- Stop the loop early when a number reaches 8 using break.
+### Assignment 2: Even Number Printer
+Write a `for` loop using `range()` to print even numbers from 2 to 20.
+- Use `continue` to skip odd numbers.
 """
-
-
-# Loop through numbers from 1 to 10
-for numbers in range(1, 11):
-    # Skip multiples of 3
-    if numbers % 3 == 0:
+print("\n --- Even Number Printer --- \n")
+for i in range(1, 21):
+    if i % 2 != 0:
         continue
-    # Stop the loop if the number reaches 8
-    if numbers == 8:
-        break
-    # Print the current number
-    print(numbers)
-
-
+    print(f"Even Number: {i}")
+print("\n ---------------------------")
