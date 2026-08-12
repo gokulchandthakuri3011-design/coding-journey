@@ -28,4 +28,14 @@ students = [student1, student2, student3, student4]
 # Looping through the list and printing each student's info
 for s in students:
     print(f"{s.name} scored {s.grade} in {s.subject}.")
-    
+
+# Using function to to accept the list of numeric grades and return a tuple of average, highest and lowest
+def get_grade_stats(grades):
+    average_grades = sum(grades)/len(grades)
+    highest_grade = max(grades)
+    lowest_grade = min(grades)
+    return average_grades, highest_grade, lowest_grade
+
+grades = [int(g) for g in input("Enter the grades seperated by comma: ").split(",")]
+average, highest, lowest = get_grade_stats(grades)
+print(f"Average: {average}, Highest: {highest}, Lowest: {lowest}")

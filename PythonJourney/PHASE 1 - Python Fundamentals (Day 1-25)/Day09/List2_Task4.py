@@ -26,12 +26,12 @@ cart = []
 # Creating a list of available items with their prices as tuples
 shop = [("Apple", 0.99), ("Milk", 1.49), ("Bread", 2.50), ("Eggs", 3.99), ("Butter", 4.50)]
 
-# Displaying the availabe items with thier price to the user
+# Displaying the availabe items with thei price to the user
 print("\n-- Available Items --\n")
 for i, items in enumerate(shop, start=1):
     print(f"{i}. {items[0]} --> ${items[1]:.2f}")
 
-# Loop to taje user input until they enter 'done'
+# Loop to ask user input until they enter 'done'
 while True:
     choice = input("\nEnter the item name to add to your cart (or type 'done' to finish): ").strip()
     if choice.lower() == "done":
