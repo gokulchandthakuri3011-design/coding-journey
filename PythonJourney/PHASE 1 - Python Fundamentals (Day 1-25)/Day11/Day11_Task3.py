@@ -25,15 +25,16 @@ student_profile = {
 
 # Printing Student name and age
 print(f"\n     Student Profile     ")
-print(f"Name: {student_profile.get("name")}")
-print(f"Age: {student_profile.get("age")}")
+print(f"Name: {student_profile.get('name')}")
+print(f"Age: {student_profile.get('age')}")
 
 # Accessing and printing the second course in the "courses" list
-print(f"2nd Course: {student_profile["courses"][1]}")
+print(f"2nd Course: {student_profile['courses'][1]}")
 
 # Accessing and printing the student's grade in Math
-print(f"Math Grade: {student_profile["grades"]["Math"]}")
+print(f"Math Grade: {student_profile['grades']['Math']}")
 
 # Average grade using sum() and len() on grades.values()
-average = sum(student_profile.get("grades").values()) / len(student_profile.get("grades").values())
+grades = student_profile.get("grades", None)
+average = sum(grades.values())/len(grades.values())
 print(f"Average Grade: {average:.2f}") 

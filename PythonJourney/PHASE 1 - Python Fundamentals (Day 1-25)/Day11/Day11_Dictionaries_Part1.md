@@ -238,8 +238,8 @@ You are managing stock levels for a small grocery store.
 
 ### 📋 Daily Routine Checklist (Day 11):
 
-- [ ] Read all concept notes on dictionary basics, keys, values, and methods.
-- [ ] Complete Assignment 1: Phone Book Database.
-- [ ] Complete Assignment 2: Inventory Management Tracker.
-- [ ] Complete Assignment 3: Student Profile Manager.
-- [ ] Attempt the Challenge: Word Frequency Counter.
+- [x] Read all concept notes on dictionary basics, keys, values, and methods.
+- [x] Complete Assignment 1: Phone Book Database.
+- [x] Complete Assignment 2: Inventory Management Tracker.
+- [x] Complete Assignment 3: Student Profile Manager.
+- [x] Attempt the Challenge: Word Frequency Counter.
