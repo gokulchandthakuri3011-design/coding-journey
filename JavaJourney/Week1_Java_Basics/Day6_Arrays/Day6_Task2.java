@@ -17,7 +17,7 @@ Smallest: 10
 */ 
 import java.util.Arrays;
 
-public class Array_Task2 {
+public class Day6_Task2 {
     public static void main(String[] args) {
 
         // Largest and Smallest number in an array

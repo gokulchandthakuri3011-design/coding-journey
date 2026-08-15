@@ -17,7 +17,7 @@ Reversed: [5, 4, 3, 2, 1]
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Array_Task3 {
+public class Day6_Task3 {
     public static void main(String[] args) {
 
         // Create a Scanner object to read user input

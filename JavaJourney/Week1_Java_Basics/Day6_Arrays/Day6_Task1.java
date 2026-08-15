@@ -18,7 +18,7 @@ Average: 30.0
 import java.util.Scanner;
 import java.util.Arrays;
 
-public class Array_Task1 {
+public class Day6_Task1 {
     public static void main(String[] args) {
 
         // Array Sum and Average

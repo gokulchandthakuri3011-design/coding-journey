@@ -11,7 +11,7 @@ Write a program that:
 
 import java.util.Scanner;
 
-public class Array_Task4 {
+public class Day6_Task4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
