@@ -335,10 +335,10 @@ Write a program that merges these two inventories.
 ---
 
 ### 📋 Daily Routine Checklist (Day 12):
-- [ ] Read all concept notes on advanced dictionaries, `collections`, and sets.
-- [ ] Complete Assignment 1: Refined Word Frequency Counter.
-- [ ] Complete Assignment 2: Common Elements & Set Operations.
-- [ ] Complete Assignment 3: List Duplicate Remover.
-- [ ] Attempt the Challenge: Inventory Merger.
+- [xx] Read all concept notes on advanced dictionaries, `collections`, and sets.
+- [x]Complete Assignment 1: Refined Word Frequency Counter.
+- [x] Complete Assignment 2: Common Elements & Set Operations.
+- [x] Complete Assignment 3: List Duplicate Remover.
+- [x] Attempt the Challenge: Inventory Merger.
 
 Keep going! Your Python data structure skills are now exceptionally strong! 🚀

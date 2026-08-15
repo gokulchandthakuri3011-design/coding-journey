@@ -20,7 +20,7 @@
 - **File:** `Day12_Task1.py`
 """
 
-print("     Refined Word Frequency Counter     ")
+print("\n----- Refined Word Frequency Counter -----\n")
 
 from collections import Counter
 
@@ -29,6 +29,8 @@ text = "Python is an amazing programming languag. Python is simple to learn and 
 
 # Processing the string
 cleaned_text = text.replace(".", "").lower().split() # Removed periods, converted to lowercase, and split into words
+print("\n--- Cleaned Text List ---")
+print(cleaned_text)
 
 # Creating a Counter object to count frequencies
 word_count = Counter(cleaned_text)
@@ -42,3 +44,4 @@ print("\n--- Top 3 Most Common Words ---")
 for i, (word, count) in enumerate(word_count.most_common(3), start = 1): # Using enumerate to get the index for formatting
     print(f"{i}. {word}: {count} times")
 
+print("\n----- The End -----")
