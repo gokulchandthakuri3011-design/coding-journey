@@ -107,8 +107,6 @@ def delete_task():
     """Deletes a task by index."""
     # Listing all tasks first
     view_tasks()
-    if not to_do_list:
-        return
 
     # Asking user to enter task number to delete
     choice = input("Enter the number of the task to delete: ")
