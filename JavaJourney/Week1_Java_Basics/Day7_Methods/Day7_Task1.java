@@ -13,7 +13,7 @@ package Week1_Java_Basics.Day7_Methods;
 
 import java.util.Scanner;
 
-public class Method_NewTask1 {
+public class Day7_Task1 {
 
     // Main method to get input and call the other methods
     public static void main(String[] args) {
