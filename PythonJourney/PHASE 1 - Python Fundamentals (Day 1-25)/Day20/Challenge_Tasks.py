@@ -7,7 +7,7 @@
 
 # Listing all files and folders in the current directory
 import os
-path = os.getcwd() # Returns cirrent directory path as string
+path = os.getcwd() # Returns current directory path as string
 files = sorted(os.listdir()) #Sorts the files & folders in current directory in ascending order
 print(f"Current Directory: {path}\n")
 for i, file in enumerate(files, 1):
