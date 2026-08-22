@@ -62,4 +62,5 @@ def updating_json(app_settings):
     with open(os.path.join(BASE_DIR, "config.json"), "r") as file:
         print(file.read())
 
-reading_json()
+if __name__ == "__main__":
+    reading_json()

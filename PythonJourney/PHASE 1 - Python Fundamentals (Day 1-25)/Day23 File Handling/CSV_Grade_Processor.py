@@ -77,4 +77,5 @@ def new_file(results):
         for row in results:
             writer.writerow(row)
 
-grade_calc()
+if __name__ == "__main__":
+    grade_calc()
