@@ -1,0 +1,3 @@
+The try block lets you test code for errors.
+The except block handles the error gracefully.
+The finally block runs no matter what happens.

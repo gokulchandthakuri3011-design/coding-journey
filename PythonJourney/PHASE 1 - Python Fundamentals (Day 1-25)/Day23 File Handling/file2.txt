@@ -1,0 +1,3 @@
+Lists are ordered and mutable collections.
+Dictionaries store data as key-value pairs.
+Tuples are immutable, making them perfect for fixed data.

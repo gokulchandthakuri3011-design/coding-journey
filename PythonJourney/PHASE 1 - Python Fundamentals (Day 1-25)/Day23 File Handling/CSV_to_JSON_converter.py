@@ -24,3 +24,47 @@ Arun,Marketing,62000
 ]
 ```
 """
+import csv
+import json
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Reading CSV File and getting data as a Dict
+def csv_reader():
+    user_data = []
+    with open(os.path.join(BASE_DIR, "employees.csv"),"r", newline="") as file:
+        reader = csv.DictReader(file)
+
+        for row in reader:
+            name = row.get("Name", "")
+            department = row.get("Department", "")
+            try:
+                salary = int(row.get("Salary", 0))
+            except ValueError:
+                salary = None
+
+            user_data.append({"Name": name, "Department": department, "Salary": salary})
+    return user_data
+
+
+
+# Writing JSON File
+def json_writer(user_data):
+    with open(os.path.join(BASE_DIR, "employees.json"), "w", newline="") as file:
+        json.dump(user_data, file, indent=4)
+
+# Reading JSON File for confirmation
+def json_reader():
+    with open(os.path.join(BASE_DIR, "employees.json"), "r") as file:
+        reader = file.read()
+        print(reader)
+
+# Using main() to call the methods
+print("\n ==== CSV -> JSON Converter === \n")
+user_data = csv_reader()
+print(user_data)
+json_writer(user_data)
+json_reader()
+
+

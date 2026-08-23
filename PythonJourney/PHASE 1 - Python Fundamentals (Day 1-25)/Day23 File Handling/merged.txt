@@ -1,0 +1,17 @@
+==== FILE: file1.txt ====
+Python is a versatile programming language.
+It is widely used in web development, data science, and automation.
+File handling is one of its many built-in strengths.
+
+
+==== FILE: file2.txt ====
+Lists are ordered and mutable collections.
+Dictionaries store data as key-value pairs.
+Tuples are immutable, making them perfect for fixed data.
+
+
+==== FILE: file3.txt ====
+The try block lets you test code for errors.
+The except block handles the error gracefully.
+The finally block runs no matter what happens.
+
