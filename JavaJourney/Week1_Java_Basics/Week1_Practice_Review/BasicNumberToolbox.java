@@ -1,3 +1,18 @@
+/*
+Project B — Basic Number Toolbox
+- Objectives: arithmetic operators, input parsing, conditionals, exception/edge-case handling, methods.
+- Requirements:
+  - Read two numbers (support integer and decimal input).
+  - Print sum, difference, product, quotient, and remainder when applicable.
+  - Indicate which numbers are even/odd (for integers) and compare magnitudes.
+- Guiding questions (covering all topics):
+  - How did you handle integer vs. floating-point division?
+  - How do you prevent or handle division by zero?
+  - Which methods did you create to organize calculations?
+  - How would you adapt input reading to avoid `nextInt()`/`nextLine()` pitfalls?
+- Extensions: add a menu loop so the user can repeat operations until they choose to exit; add parity and sign checks.
+- Deliverables: `NumberToolbox.java`, README with sample runs.
+*/
 package Week1_Java_Basics.Week1_Practice_Review;
 
 import java.util.Scanner;
@@ -59,7 +74,7 @@ public class BasicNumberToolbox {
 
   // Show the menu options to the user
   public static void showMenu() {
-    System.out.println("\n=== Number Toolbox Menu ==="); // Here \n ia used to add a newline before the menu for the better readability
+    System.out.println("\n=== Number Toolbox Menu ==="); // Here \n is used to add a newline before the menu for the better readability
     System.out.println("1. Add");
     System.out.println("2. Subtract");
     System.out.println("3. Multiply");
