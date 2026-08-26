@@ -74,7 +74,7 @@ print(contact.get("age", "N/A"))   # N/A (safe default)
 def validate_phone(phone: str) -> bool:
     """Return True if phone contains only digits, dashes, and spaces."""
     allowed = set("0123456789- ")
-    return all(c in allowed for c in phone)
+    return all(c in allowed for c in phone) # here all() checks if all condition is True/False if all True  returns True, if even 1 False -> return False
 ```
 
 ### 2.4 Days 23–24: File Handling & Errors
@@ -315,11 +315,11 @@ def delete_contact(contacts: list) -> None:
 
 Check each box only if you can explain it AND use it without help:
 
-- [ ] Variables, data types, and type casting
-- [ ] Operators (`+`, `//`, `%`, `**`, comparisons, `and`/`or`/`not`)
-- [ ] Strings, f-strings, slicing, and common string methods
-- [ ] `if`/`elif`/`else` and `match`/`case`
-- [ ] `for` and `while` loops, `break`, `continue`, `range()`
+- [x] Variables, data types, and type casting
+- [x] Operators (`+`, `//`, `%`, `**`, comparisons, `and`/`or`/`not`)
+- [x] Strings, f-strings, slicing, and common string methods
+- [x] `if`/`elif`/`else` and `match`/`case`
+- [x] `for` and `while` loops, `break`, `continue`, `range()`
 - [ ] Lists — methods, slicing, comprehensions
 - [ ] Tuples — unpacking, when to use them
 - [ ] Dictionaries — get/update/iterate, `.items()`
