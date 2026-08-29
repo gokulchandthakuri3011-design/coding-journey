@@ -26,7 +26,7 @@ public class Rectangle {
 
   // Creating Method calculatePerimeter()
   public void calculatePerimeter() {
-    System.out.println("Perimeter of rectangle: " + 2 * (length + width));
+    System.out.printf("Perimeter of rectangle: %.2f%n",2 * (length + width));
   }
 
   // Creating a Main Method 

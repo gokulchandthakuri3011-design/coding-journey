@@ -19,10 +19,10 @@ public class Student {
 
     // Creating Method to display Student Info (non-static instance method)
     public void displayStudentInfo() {
-        System.out.println("Displaying Student Information:");
-        System.out.println("Name: " + name);
-        System.out.println("Roll Number: " + rollNumber);
-        System.out.println("Marks: " + marks);
+        System.out.println("____ Displaying Student Information: ____");
+        System.out.printf("Name: %s%n",name);
+        System.out.printf("Roll Number: %d%n",rollNumber);
+        System.out.printf("Marks: %.2f%n",marks);
     }
 }
 

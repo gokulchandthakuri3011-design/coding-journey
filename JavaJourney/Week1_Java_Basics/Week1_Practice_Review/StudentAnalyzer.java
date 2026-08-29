@@ -32,10 +32,10 @@ public class StudentAnalyzer {
           System.out.println("Please enter a positive number!");
         } else {
           System.out.println("Please enter a valid number!");
-          scanner.next();
+          scanner.next(); // eats the invalid input(buffer cleaner)
         }
       }
-      scanner.nextLine();
+      scanner.nextLine(); // eats the stray newline(buffer cleaner)
 
       // Creating 2 parallel arrays to store student names and grades
       String[] names = new String[num];
