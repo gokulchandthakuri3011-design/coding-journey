@@ -25,9 +25,7 @@ public class Employee {
 
     // No-arg constructor
     public Employee() {
-        this.name = "Unknown";
-        this.id = 0;
-        this.salary = 30000.0;
+        this("Unknown", 0, 30000.0);
     }
 
     // Method to display details
