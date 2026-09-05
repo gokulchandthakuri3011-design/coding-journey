@@ -206,9 +206,43 @@ class Employee:
         self._salary = value
 
     def __repr__(self):                      # debug representation
-        return f"Employee({self.name!r}, {self.salary!r})"
+        return f"Employee({self.name!r}, {self.salary!r})" # Here !r is format specifier that calls repr() 
 ```
+
+### `!r` format specifier (in f-strings)
+
+- `{value}` → uses `str(value)` — readable, no quotes for strings
+- `{value!r}` → uses `repr(value)` — exact, quotes for strings
+
+Example: `name = "Alice"` → `f"{name}"` = `Alice`, `f"{name!r}"` = `'Alice'`
+
+**Why `!r` inside `__repr__`:**
+`__repr__` should be unambiguous and reproducible — output should be valid Python you could paste back to recreate the object.
+
+- With `!r`: `Employee('Alice', 50000.0)` ✅ valid Python
+- Without: `Employee(Alice, 50000.0)` ❌ `Alice` is a bare name → error
+
+**Related specifiers:** `!s` → `str()`, `!r` → `repr()`, `!a` → `ascii()`
+
+**Takeaway:** Always use `!r` in `__repr__` to show values with quotes so the representation can be used to rebuild the object.
 
 ---
 
-> **Practice ideas:** Currency/Money class with arithmetic, custom dictionary-like class, a validation-driven `__slots__` data class.
+## 7. Practice Assignments
+
+### Easy
+1. Write a `@staticmethod` `is_valid_mail(email)` on a `User` class that returns `True` if the email contains `"@"`.
+2. Write a `@classmethod` `from_string(cls, s)` on a `User` class that takes `"name:age"` and returns a new `User`.
+3. Write a `Circle` class with a `radius` property and a validating setter (rejects negative values).
+
+### Medium
+4. Write a `Temperature` class with `_celsius` and a read-only `fahrenheit` property (`c * 9/5 + 32`).
+5. Write a `Money` class with `__add__`, `__eq__`, `__lt__`, `__str__`, and `__repr__`.
+6. Write a `Book` class with `__len__` (returns pages) and `__contains__` (checks if a word is in the title).
+
+### Hard
+7. Build a `BankAccount` with a private `__balance`, `deposit()` validation, a read-only `balance` property, and `__add__` that merges two accounts.
+8. Build a `ShoppingCart` using `__slots__` products, a `total` read-only property, and `__add__` to add items.
+9. Write a custom `dict`-like class overriding `__getitem__`, `__setitem__`, and `__contains__` without subclassing `dict`.
+
+> **Challenge:** Create a `Fraction` class that supports `+`, `-`, `*`, `/`, `==`, `>` and reduces itself to simplest form using a `@staticmethod` gcd helper.
