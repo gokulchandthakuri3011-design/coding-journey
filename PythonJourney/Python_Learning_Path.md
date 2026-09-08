@@ -219,26 +219,26 @@
 - [ ] **Practice:** Create a Student class and BankAccount class.
 
 ## Day 27: OOP — Inheritance & Polymorphism
-- [ ] Single and multiple inheritance
-- [ ] Method overriding and the `super()` function
-- [ ] Method Resolution Order (MRO)
-- [ ] Abstract Base Classes (ABCs) using `abc` module
-- [ ] Polymorphism (duck typing in Python)
+- [x] Single and multiple inheritance
+- [x] Method overriding and the `super()` function
+- [x] Method Resolution Order (MRO)
+- [x] Abstract Base Classes (ABCs) using `abc` module
+- [x] Polymorphism (duck typing in Python)
 - [ ] **Practice:** Shape class hierarchy, animal speaking behaviors.
 
 ## Day 28: OOP — Advanced Features
-- [ ] Class methods (`@classmethod`) vs Static methods (`@staticmethod`)
-- [ ] Encapsulation (public, protected `_`, private `__` variables)
-- [ ] Getter and setter methods using `@property` decorator
-- [ ] Magic/Dunder methods: operator overloading (`__eq__`, `__lt__`, `__add__`, `__len__`, `__getitem__`)
-- [ ] Memory optimization with `__slots__`
+- [x] Class methods (`@classmethod`) vs Static methods (`@staticmethod`)
+- [x] Encapsulation (public, protected `_`, private `__` variables)
+- [x] Getter and setter methods using `@property` decorator
+- [x] Magic/Dunder methods: operator overloading (`__eq__`, `__lt__`, `__add__`, `__len__`, `__getitem__`)
+- [x] Memory optimization with `__slots__`
 - [ ] **Practice:** Currency/Money class with arithmetic operations, custom dictionary-like class.
 
 ## Day 29: Iterators & Generators
-- [ ] Iterator protocol: `__iter__()` and `__next__()`
-- [ ] Building custom iterable classes
-- [ ] Generator functions and the `yield` keyword
-- [ ] Generator expressions vs list comprehensions (memory efficiency analysis)
+- [x] Iterator protocol: `__iter__()` and `__next__()`
+- [x] Building custom iterable classes
+- [x] Generator functions and the `yield` keyword
+- [x] Generator expressions vs list comprehensions (memory efficiency analysis)
 - [ ] **Practice:** Infinite stream generator, custom range-like class.
 
 ## Day 30: Decorators
