@@ -17,7 +17,6 @@ Let's build upon your Day 10 `Student` class:
 public class StudentStatic {
     // private static variable with value 1000
     private static int studentCounter = 1000;
-    private static int totalStudents = 0;
 
     // instance variable
     private String uniqueID;
@@ -27,17 +26,16 @@ public class StudentStatic {
     public StudentStatic(String name) {
         this.name = name;
 
-        // inrement the static counter first
+        // increment the static counter first
         studentCounter++;
-        totalStudents++;
 
         // Constructing uniqueId
-        this.uniqueID = name + "-"  + studentCounter;
+        this.uniqueID = name + "-" + studentCounter;
     }
 
-    // Static getter method
-    public static int getTotalStudentsCount() {
-        return totalStudents;
+    // Static getter method for the student counter
+    public static int getStudentCounter() {
+        return studentCounter;
     }
 
     // public getter for uniqueID
@@ -63,7 +61,7 @@ public class StudentStatic {
         System.out.println("Student 2: " + s2.getName() + " ID: " + s2.getUniqueID());
         System.out.println("Student 3: " + s3.getName() + " ID: " + s3.getUniqueID());
 
-        // Calling static method to print total count of students
-        System.out.println("Total Students enrolled: " + StudentStatic.getTotalStudentsCount());
+        // Calling static method to print current counter value
+        System.out.println("Current student counter: " + StudentStatic.getStudentCounter());
     }
 }
