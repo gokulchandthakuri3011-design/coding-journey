@@ -44,7 +44,10 @@ def sum_of_squares(limit):
     return sum(i ** 2 for i in range(1, limit + 1))
 
 # Example usage
-if __name__ == "__main__":
+def main():
     limit = 10000
     result = sum_of_squares(limit)
     print(f"Sum of squares from 1 to {limit} is: {result}")
+    
+if __name__ == "__main__":
+    main()

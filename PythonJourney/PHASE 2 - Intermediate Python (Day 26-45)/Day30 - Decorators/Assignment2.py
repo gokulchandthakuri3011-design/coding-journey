@@ -15,6 +15,43 @@ Requirements:
 Questions:
 
 - What happens when authentication fails?
+-> The protected functin is not called.
+
 - Why should the protected function not run after failed authentication?
+-> To protect and prevent from unauthorized access, as the fuction might have some private or imp data
+
 - How could a real application replace hard-coded credentials?
+-> Real appliction stores users data securely.
 """
+
+from functools import wraps
+
+
+# Creating Decorator
+def require_authentication(function):
+    valid_username = "Songoku"
+    valid_password = "UltraInstinct8"
+
+    @wraps(function)
+    def wrapper(username, password, *args, **kwargs):
+        if username == valid_username and password == valid_password:
+            return function(username, password, *args, **kwargs)
+        return "Access Denied! Wrong Entry!"
+
+    return wrapper
+
+
+@require_authentication
+def view_dashboard(username, password):
+    return f"Welcome {username}! You are logged in."
+
+
+def main():
+    username = input("Enter correct User Id: ")
+    password = input("Enter the correct Password: ")
+    print(view_dashboard(username, password))
+
+
+if __name__ == "__main__":
+    print("-- Validating User Id & Password --\n")
+    main()
