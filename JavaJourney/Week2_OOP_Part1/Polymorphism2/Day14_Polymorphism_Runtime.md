@@ -148,6 +148,9 @@ Animal myAnimal = myDog;  // Upcasting — automatic and safe
 
 - **Always safe**: A `Dog` **is an** `Animal`.
 - **Limitation**: You can only access methods defined in the parent class.
+- **Reference type decides what you can access
+- **Actual object decides what method runs
+- **Upcasting limits access, but overridden methods still execute
 
 ### Downcasting (Manual)
 

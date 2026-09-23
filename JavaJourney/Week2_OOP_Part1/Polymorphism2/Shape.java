@@ -1,6 +1,5 @@
 package Week2_OOP_Part1.Polymorphism2;
 
-
 /*
 1. **Shape Hierarchy**: Create a `Shape` superclass with an abstract-like `double area()` method (return 0).
     Create `Circle` (with `radius`) and `Rectangle` (with `width`, `height`) subclasses that override `area()`.
