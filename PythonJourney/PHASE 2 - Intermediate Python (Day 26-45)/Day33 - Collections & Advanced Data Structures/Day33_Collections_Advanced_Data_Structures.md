@@ -150,10 +150,10 @@ import heapq
 
 items = [5, 2, 9, 1, 7]
 heapq.heapify(items)
-print(items)
+print(items) # [1,2,5,7,9]
 
-heapq.heappush(items, 3)
-print(heapq.heappop(items))
+heapq.heappush(items, 3) # Adds 3 to items
+print(heapq.heappop(items)) # removes and returns smallest value
 ```
 
 `heapq` is useful for scheduling, shortest path logic, and task prioritization.
